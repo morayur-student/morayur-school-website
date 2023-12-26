@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <!-- <li><a href="blog.html">BLOG</a></li> -->
+                    <li><div class="dropdown">
+                        <button class="dropbtn">OTHER 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="study_resources.html">Study Resources</a>
+                          <a href="blog.html">Blogs</a>
+                          <a href="#">Other</a>
+                        </div>
+                      </div> 
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact</h1>
+    </section>
+
+
+<!-- ------contact us page ---->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.7197068591345!2d76.01006651511904!3d11.134240655530828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa581b5df57edab4!2sVHM%20Higher%20Secondary%20School%20Morayur!5e0!3m2!1sen!2sin!4v1672928925155!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row1">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-sharp fa-solid fa-school"></i>
+                    <span>
+                        <h5>VHMHSS Morayur,</h5>
+                        <p>Malappuram, Kerala - 673638</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>998777483354 </h5>
+                        <p>Monday to Friday, 8AM to 2PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>Vhm@gmail.com</h5>
+                        <p>Email Us</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input name="name" type="text" placeholder="Enter your name" required>
+                    <input name="email" type="email" placeholder="Enter your Email" required>
+                    <textarea name="message" id="" rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn1">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+<!-- --------footer--------- -->
+    <section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+    </section>
+    
+
+
+
+
+<!-- toggling menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
